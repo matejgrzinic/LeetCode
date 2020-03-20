@@ -1,5 +1,8 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
 
+# Runtime: 296 ms, faster than 93.42% of Python3 online submissions for Longest Palindromic Substring.
+# Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Longest Palindromic Substring.
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         # Top
@@ -22,9 +25,7 @@ class Solution:
     
     
         
-    def longestPalindromeMine(self, s: str) -> str:
-        # Runtime: 296 ms, faster than 93.42% of Python3 online submissions for Longest Palindromic Substring.
-        # Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Longest Palindromic Substring.
+    def longestPalindromeMine(self, s: str) -> str:        
         best = ""
         n = len(s)
         if len(s) < 2 or s ==s[::-1]:

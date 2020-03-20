@@ -1,10 +1,10 @@
 # https://leetcode.com/problems/zigzag-conversion/
 
+# Runtime: 36 ms, faster than 99.98% of Python3 online submissions for ZigZag Conversion.
+# Memory Usage: 13 MB, less than 98.57% of Python3 online submissions for ZigZag Conversion  
+
 class Solution:
-    def convert(self, s: str, numRows: int) -> str:
-        # Runtime: 36 ms, faster than 99.98% of Python3 online submissions for ZigZag Conversion.
-        # Memory Usage: 13 MB, less than 98.57% of Python3 online submissions for ZigZag Conversion        
-        
+    def convert(self, s: str, numRows: int) -> str:             
         if numRows == 1:
             return s
         else:           

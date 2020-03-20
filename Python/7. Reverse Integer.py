@@ -1,9 +1,10 @@
 # https://leetcode.com/problems/reverse-integer/
 
+# Runtime: 28 ms, faster than 77.55% of Python3 online submissions for Reverse Integer.
+# Memory Usage: 13 MB, less than 100.00% of Python3 online submissions for Reverse Integer.
+
 class Solution:
-    def reverse(self, x: int) -> int:
-        # Runtime: 28 ms, faster than 77.55% of Python3 online submissions for Reverse Integer.
-        # Memory Usage: 13 MB, less than 100.00% of Python3 online submissions for Reverse Integer.
+    def reverse(self, x: int) -> int:        
         sign = 1
         if x < 0:
             sign = -1

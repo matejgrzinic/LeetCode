@@ -1,9 +1,10 @@
 # https://leetcode.com/problems/string-to-integer-atoi/
 
+# Runtime: 16 ms, faster than 99.92% of Python3 online submissions for String to Integer (atoi).
+# Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for String to Integer (atoi).
+
 class Solution:    
-    def myAtoi(self, str: str) -> int:
-        # Runtime: 16 ms, faster than 99.92% of Python3 online submissions for String to Integer (atoi).
-        # Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for String to Integer (atoi).
+    def myAtoi(self, str: str) -> int:        
         trimmed = str.strip()
         
         f = False
@@ -36,8 +37,7 @@ class Solution:
     
     
     def myAtoi2(self, str: str) -> int:        
-        trimmed = str.strip()
-        
+        trimmed = str.strip()        
         num = ""
         for char in trimmed:
             if num == "" and char in "+-":
