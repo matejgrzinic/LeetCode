@@ -32,14 +32,15 @@ func myAtoi(str string) int {
 
 	if len(num) == 0 || num == "+" || num == "-" {
 		return 0
-	} else {
-		number, _ := strconv.Atoi(num)
-
-		if number < -2147483648 {
-			return -2147483648
-		} else if number > 2147483647 {
-			return 2147483647
-		}
-		return number
 	}
+
+	number, _ := strconv.Atoi(num)
+
+	if number < -2147483648 {
+		return -2147483648
+	} else if number > 2147483647 {
+		return 2147483647
+	}
+	return number
+
 }
