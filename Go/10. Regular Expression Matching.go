@@ -21,9 +21,9 @@ func isMatch(s string, p string) bool {
 
 	if _, ok := m[s+"_"+p]; ok {
 		return false
-	} else {
-		m[s+"_"+p] = true
 	}
+
+	m[s+"_"+p] = true
 
 	if len(s) == 0 {
 		for len(p) > 1 && p[1] == '*' {
