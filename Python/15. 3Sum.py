@@ -31,7 +31,71 @@ class Solution:
                 for index in nums[left:bisect.bisect_right(nums,(twosum//2),left)]:
                     j=twosum-index
                     if j in counts and j!=index:
-                        results.append([num,index,j])     
+                        results.append([num,index,j])             
+        return results
+    
+    def threeSumMine(self, nums):
+        results = []
+        counts = {}
+        
+        nums = sorted(nums)
+        for number in nums:
+            counts[number] = counts.get(number, 0) + 1
+        
+        nums = list(counts.keys())
+        
+        for index, d in enumerate(counts.items()):
+            num, count = d
+            if count > 2:
+                if num == 0:
+                    results.append([num] * 3)
+            if count > 1:
+                seek = num * -2
+                if  seek in counts.keys() and seek != num :
+                    results.append([num, num, seek])
+            if count > 0:
+                l = index + 1
+                r = len(nums) - 1
+                while l < r:
+                    s = num + nums[l] + nums[r]
+                    if s == 0:
+                        results.append([num, nums[l], nums[r]])
+                        l += 1
+                        r -= 1
+                    elif s > 0:
+                        r -= 1
+                    else:
+                        l += 1       
+        
+        return results
+    
+    def threeSumOriginal(self, nums):
+        results = []
+        nums = sorted(nums)
+        
+        seen = set()       
+        
+        for i, a in enumerate(nums):
+            l = i + 1
+            r = len(nums) - 1
+            
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            
+            while l < r:
+                s = a + nums[l] + nums[r]
+                if s == 0:     
+                    if (a, nums[l], nums[r]) not in seen:            
+                        results.append([a, nums[l], nums[r]])
+                        seen.add((a, nums[l], nums[r]))
+                    r -= 1
+                    l += 1
+                        
+                elif s > 0:
+                    r -= 1
+                    
+                else:
+                    l += 1
         
         return results
     
