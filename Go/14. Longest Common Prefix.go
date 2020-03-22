@@ -5,11 +5,9 @@
 
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println(longestCommonPrefix(([]string{"flower", "flow", "flight"})))
-}
+// func main() {
+// 	fmt.Println(longestCommonPrefix(([]string{"flower", "flow", "flight"})))
+// }
 
 func longestCommonPrefix(strs []string) string {
 	result := ""
