@@ -71,9 +71,7 @@ class Solution:
     
     def threeSumOriginal(self, nums):
         results = []
-        nums = sorted(nums)
-        
-        seen = set()       
+        nums = sorted(nums)     
         
         for i, a in enumerate(nums):
             l = i + 1
@@ -84,12 +82,14 @@ class Solution:
             
             while l < r:
                 s = a + nums[l] + nums[r]
-                if s == 0:     
-                    if (a, nums[l], nums[r]) not in seen:            
-                        results.append([a, nums[l], nums[r]])
-                        seen.add((a, nums[l], nums[r]))
-                    r -= 1
+                if s == 0:                
+                    results.append([a, nums[l], nums[r]])                    
                     l += 1
+                    while l < r and nums[l] == nums[l-1]:
+                        l += 1                   
+                    r -= 1
+                    while r > l and nums[r] == nums[r+1]:
+                        r -= 1                    
                         
                 elif s > 0:
                     r -= 1
