@@ -6,16 +6,15 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"sort"
 )
 
-func main() {
-	fmt.Println(threeSumClosest([]int{-1, 2, 1, -4}, 1))    // 2
-	fmt.Println(threeSumClosest([]int{1, 1, 1, 0}, 100))    // 3
-	fmt.Println(threeSumClosest([]int{1, 1, -1, -1, 3}, 3)) // 3
-}
+// func main() {
+// 	fmt.Println(threeSumClosest([]int{-1, 2, 1, -4}, 1))    // 2
+// 	fmt.Println(threeSumClosest([]int{1, 1, 1, 0}, 100))    // 3
+// 	fmt.Println(threeSumClosest([]int{1, 1, -1, -1, 3}, 3)) // 3
+// }
 
 func threeSumClosest(nums []int, target int) int {
 	sort.Ints(nums)
