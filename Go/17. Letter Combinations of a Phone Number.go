@@ -2,10 +2,10 @@
 
 package main
 
-import (
-	"fmt"
-	"time"
-)
+// import (
+// 	"fmt"
+// 	"time"
+// )
 
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
 // Memory Usage: 2 MB, less than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
