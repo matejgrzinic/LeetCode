@@ -2,25 +2,25 @@
 
 package main
 
-// import (
-// 	"fmt"
-// 	"time"
-// )
+import (
+	"fmt"
+	"time"
+)
 
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
 // Memory Usage: 2 MB, less than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
 
-// func main() {
-// 	t1 := time.Now().UnixNano()
-// 	letterCombinations("2345678923445")
-// 	t2 := time.Now().UnixNano()
-// 	fmt.Println((t2 - t1) / 1000000)
-// 	t1 = time.Now().UnixNano()
-// 	letterCombinationsSecond("2345678923445")
-// 	t2 = time.Now().UnixNano()
-// 	fmt.Println((t2 - t1) / 1000000)
-// 	//fmt.Println(letterCombinations("234567892345")) // [ad ae af bd be bf cd ce cf]
-// }
+func main() {
+	t1 := time.Now().UnixNano()
+	letterCombinations("2345678923445")
+	t2 := time.Now().UnixNano()
+	fmt.Println((t2 - t1) / 1000000)
+	t1 = time.Now().UnixNano()
+	letterCombinationsSecond("2345678923445")
+	t2 = time.Now().UnixNano()
+	fmt.Println((t2 - t1) / 1000000)
+	//fmt.Println(letterCombinations("234567892345")) // [ad ae af bd be bf cd ce cf]
+}
 
 func letterCombinations(digits string) []string {
 	result := []string{}

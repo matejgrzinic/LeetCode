@@ -6,12 +6,13 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 )
 
-// func main() {
-// 	fmt.Println(isPalindrome(121))
-// }
+func main() {
+	fmt.Println(isPalindrome(121))
+}
 
 func isPalindrome(x int) bool {
 	if x < 0 {

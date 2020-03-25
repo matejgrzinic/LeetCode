@@ -9,9 +9,9 @@ import (
 	"sort"
 )
 
-// func main() {
-// 	fmt.Println(threeSum([]int{-1, -2, -3, 4, 1, 3, 0, 3, -2, 1, -2, 2, -1, 1, -5, 4, -3}))
-// }
+func main() {
+	fmt.Println(threeSum([]int{-1, -2, -3, 4, 1, 3, 0, 3, -2, 1, -2, 2, -1, 1, -5, 4, -3}))
+}
 
 func threeSum(nums []int) [][]int {
 	var result [][]int

@@ -5,9 +5,11 @@
 
 package main
 
-// func main() {
-// 	fmt.Println(intToRoman(1994))
-// }
+import "fmt"
+
+func main() {
+	fmt.Println(intToRoman(1994))
+}
 
 func intToRoman(num int) string {
 	numbers := []int{1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000}

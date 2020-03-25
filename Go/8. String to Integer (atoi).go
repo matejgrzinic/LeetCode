@@ -11,9 +11,9 @@ import (
 	"unicode"
 )
 
-// func main() {
-// 	fmt.Println(myAtoi("-91283472332"))
-// }
+func main() {
+	fmt.Println(myAtoi("-91283472332"))
+}
 
 func myAtoi(str string) int {
 	trimmedString := strings.TrimSpace(str)

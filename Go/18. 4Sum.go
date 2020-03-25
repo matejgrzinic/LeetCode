@@ -6,12 +6,13 @@
 package main
 
 import (
+	"fmt"
 	"sort"
 )
 
-// func main() {
-// 	fmt.Println(fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
-// }
+func main() {
+	fmt.Println(fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
+}
 
 func fourSum(nums []int, target int) [][]int {
 	// var results [][]int

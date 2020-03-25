@@ -7,13 +7,13 @@ package main
 
 import "fmt"
 
-// func main() {
-// 	// head := initLinkedList([]int{1, 2, 3, 4, 5})
-// 	head := initLinkedList([]int{1})
-// 	printLinkedList(head)
-// 	head = removeNthFromEnd(head, 1)
-// 	printLinkedList(head)
-// }
+func main() {
+	// head := initLinkedList([]int{1, 2, 3, 4, 5})
+	head := initLinkedList([]int{1})
+	printLinkedList(head)
+	head = removeNthFromEnd(head, 1)
+	printLinkedList(head)
+}
 
 type ListNode struct {
 	Val  int

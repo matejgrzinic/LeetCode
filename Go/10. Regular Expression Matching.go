@@ -5,9 +5,11 @@
 
 package main
 
-// func main() {
-// 	fmt.Println(isMatch("mississippi", "mis*is*ip*."))
-// }
+import "fmt"
+
+func main() {
+	fmt.Println(isMatch("mississippi", "mis*is*ip*."))
+}
 
 var (
 	m = make(map[string]bool)
