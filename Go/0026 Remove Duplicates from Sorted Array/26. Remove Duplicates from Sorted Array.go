@@ -7,21 +7,21 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	nums := []int{1, 1, 2}
 	removeDuplicates(nums)
 	fmt.Println(nums)
 }
 
 func removeDuplicates(nums []int) int {
-	if len(nums) == 0{
+	if len(nums) == 0 {
 		return 1
 	}
 	unique := 0
 	for index := range nums[1:] {
-		if nums[index + 1] != nums[unique]{
+		if nums[index+1] != nums[unique] {
 			unique++
-			nums[unique] = nums[index + 1]
+			nums[unique] = nums[index+1]
 		}
 	}
 	return unique + 1
