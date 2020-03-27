@@ -2,6 +2,11 @@
 
 https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 
+```
+Runtime: 204 ms, faster than 30.12% of Go online submissions for Substring with Concatenation of All Words.
+Memory Usage: 3.2 MB, less than 100.00% of Go online submissions for Substring with Concatenation of All Words.
+```
+
 - [x] Slow solution
 - [ ] Optimal solution
 

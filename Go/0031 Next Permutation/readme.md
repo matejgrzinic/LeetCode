@@ -1,11 +1,11 @@
 # 31. Next Permutation
 
+https://leetcode.com/problems/next-permutation/
+
 ```
 Runtime: 0 ms, faster than 100.00% of Go online submissions for Next Permutation.
 Memory Usage: 2.5 MB, less than 100.00% of Go online submissions for Next Permutation.
 ```
-
-https://leetcode.com/problems/next-permutation/
 
 Implement **next permutation**, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
