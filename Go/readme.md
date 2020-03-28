@@ -8,3 +8,6 @@
 - [ ] 250 Solutions
 - [ ] 500 Solutions
 - [ ] 1000 Solutions
+
+
+To optimize: #29, #30, #32
