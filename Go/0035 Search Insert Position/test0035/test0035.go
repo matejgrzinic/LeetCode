@@ -8,6 +8,7 @@ var numTests int
 var failed int
 var testFunction testFunc
 
+// Test function runs over all tests and prints unsuccessful tests
 func Test(fn testFunc) {
 	numTests, failed = 0, 0
 	testFunction = fn
