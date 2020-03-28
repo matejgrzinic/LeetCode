@@ -25,34 +25,19 @@ func binarySearch(nums []int, left int, right int, target int) int {
 		return -1
 	}
 
-	if target > nums[mid] && target >= pivot && nums[mid] < pivot { // [8 1 3] 8
-		return binarySearch(nums, left, mid-1, target)
-	}
-
-	if target > nums[mid] && nums[mid] >= pivot { // [8 1 3] 8
+	if target > nums[mid] {
+		if target >= pivot && nums[mid] < pivot {
+			return binarySearch(nums, left, mid-1, target)
+		}
 		return binarySearch(nums, mid+1, right, target)
 	}
-
-	if target > nums[mid] && nums[mid] < pivot { // [5 1 3] 3 |
-		return binarySearch(nums, mid+1, right, target)
-	}
-
-	if target < nums[mid] && target >= pivot {
+	if nums[mid] < pivot || target >= pivot {
 		return binarySearch(nums, left, mid-1, target)
 	}
-
-	if target < nums[mid] && nums[mid] < pivot {
-		return binarySearch(nums, left, mid-1, target)
-	}
-
-	// if target < nums[mid] && nums[mid] > pivot {
-	// 	return binarySearch(nums, left, mid-1, target)
-	// }
-
 	return binarySearch(nums, mid+1, right, target)
 }
 
-////////// tests
+// Start of tests
 
 var numTests int
 var failed int
