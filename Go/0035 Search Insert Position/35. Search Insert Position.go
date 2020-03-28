@@ -1,9 +1,10 @@
 package main
 
-import "fmt"
+import "./test0035"
 
 func main() {
-	fmt.Println(searchInsert([]int{1, 3, 5, 6}, 5))
+	//test0035.Test(searchInsert)
+	test0035.Test(searchInsert)
 }
 
 func searchInsert(nums []int, target int) int {
