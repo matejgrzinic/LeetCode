@@ -3,7 +3,6 @@ package main
 import "./test0035"
 
 func main() {
-	//test0035.Test(searchInsert)
 	test0035.Test(searchInsert)
 }
 
