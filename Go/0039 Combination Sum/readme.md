@@ -3,8 +3,8 @@
 https://leetcode.com/problems/combination-sum/
 
 ```
-Runtime: 4 ms, faster than 65.50% of Go online submissions for Combination Sum.
-Memory Usage: 6 MB, less than 100.00% of Go online submissions for Combination Sum.
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Combination Sum.
+Memory Usage: 3.2 MB, less than 100.00% of Go online submissions for Combination Sum.
 ```
 
 Given a **set** of candidate numbers (candidates) (**without duplicates**) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
