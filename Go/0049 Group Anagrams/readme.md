@@ -3,8 +3,8 @@
 https://leetcode.com/problems/group-anagrams/
 
 ```
-Runtime: 4852 ms, faster than 5.04% of Go online submissions for Group Anagrams.
-Memory Usage: 13.2 MB, less than 100.00% of Go online submissions for Group Anagrams.
+Runtime: 28 ms, faster than 79.80% of Go online submissions for Group Anagrams.
+Memory Usage: 7 MB, less than 100.00% of Go online submissions for Group Anagrams.
 ```
 
 Given an array of strings, group anagrams together.
