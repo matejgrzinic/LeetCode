@@ -8,20 +8,6 @@ func main() {
 	test0062.Test(uniquePaths)
 }
 
-func uniquePaths2(m int, n int) int {
-	paths := 0
-	if m == 1 && n == 1 {
-		return 1
-	}
-	if m > 1 {
-		paths += uniquePaths(m-1, n)
-	}
-	if n > 1 {
-		paths += uniquePaths(m, n-1)
-	}
-	return paths
-}
-
 func uniquePaths(m int, n int) int {
 	seen := [][]int{}
 	for i := 0; i < n; i++ {
