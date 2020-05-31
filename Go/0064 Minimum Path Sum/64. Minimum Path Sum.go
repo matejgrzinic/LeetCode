@@ -54,7 +54,7 @@ func (h *Heap) Push(i Item) {
 
 func (h *Heap) siftUp(i int) {
 	parent := (i - 1) / 2
-	if h.elements[i].cost < h.elements[parent].cost {
+	if h.elements[i].compare(&h.elements[parent]) {
 		h.swap(i, parent)
 		h.siftUp(parent)
 	}
@@ -67,11 +67,15 @@ func (h *Heap) siftDown(i int) {
 		if r < n && h.elements[r].cost < h.elements[l].cost {
 			l = r
 		}
-		if h.elements[l].cost < h.elements[i].cost {
+		if h.elements[l].compare(&h.elements[i]) {
 			h.swap(i, l)
 			h.siftDown(l)
 		}
 	}
+}
+
+func (i1 *Item) compare(i2 *Item) bool {
+	return i1.cost < i2.cost
 }
 
 func (h *Heap) swap(i int, j int) {
