@@ -1,11 +1,12 @@
 package main
 
 import (
+	"./test0061"
 	. "./test0061"
 )
 
 func main() {
-	Test(rotateRight)
+	test0061.Test(rotateRight)
 }
 
 func rotateRight(head *ListNode, k int) *ListNode {
