@@ -2,10 +2,14 @@
 
 https://leetcode.com/problems/set-matrix-zeroes/
 
+To do:
+- make space complexity constant
+
 ```
 Runtime: 8 ms, faster than 99.49% of Go online submissions for Set Matrix Zeroes.
 Memory Usage: 6 MB, less than 20.00% of Go online submissions for Set Matrix Zeroes.
 ```
+
 
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place.
 
