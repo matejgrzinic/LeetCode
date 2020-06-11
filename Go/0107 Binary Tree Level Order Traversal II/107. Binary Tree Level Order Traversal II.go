@@ -13,44 +13,30 @@ func levelOrderBottom(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
-	res := [][]int{{root.Val}}
-
-	l, r := [][]int{}, [][]int{}
-	if root.Left != nil {
-		l = levelOrderBottom(root.Left)
-	}
-	if root.Right != nil {
-		r = levelOrderBottom(root.Right)
-	}
-
-	new := merge(l, r)
-	if len(new) != 0 {
-		res = append(new, res...)
+	res := [][]int{}
+	order(root, 1, &res)
+	for i := 0; i < len(res); i++ {
+		j := len(res) - 1 - i
+		if i < j {
+			res[i], res[j] = res[j], res[i]
+		} else {
+			break
+		}
 	}
 	return res
 }
 
-func merge(l [][]int, r [][]int) [][]int {
-	n, m := len(l), len(r)
-
-	arr := [][]int{}
-	for {
-		row := []int{}
-		added := false
-		if n > 0 {
-			row = append(row, l[n-1]...)
-			added = true
-			n--
-		}
-		if m > 0 {
-			row = append(row, r[m-1]...)
-			added = true
-			m--
-		}
-		if !added {
-			break
-		}
-		arr = append([][]int{row}, arr...)
+func order(e *TreeNode, depth int, arr *[][]int) {
+	if len(*arr) < depth {
+		*(arr) = append(*arr, []int{e.Val})
+	} else {
+		(*arr)[depth-1] = append((*arr)[depth-1], e.Val)
 	}
-	return arr
+
+	if (*e).Left != nil {
+		order(e.Left, depth+1, arr)
+	}
+	if (*e).Right != nil {
+		order(e.Right, depth+1, arr)
+	}
 }

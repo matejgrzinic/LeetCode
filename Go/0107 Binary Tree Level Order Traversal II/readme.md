@@ -2,12 +2,9 @@
 
 https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 
-To do:
-- optimize it
-
 ```
-Runtime: 444 ms, faster than 6.36% of Go online submissions for Binary Tree Level Order Traversal II.
-Memory Usage: 7.9 MB, less than 5.33% of Go online submissions for Binary Tree Level Order Traversal II.
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Binary Tree Level Order Traversal II.
+Memory Usage: 3 MB, less than 51.41% of Go online submissions for Binary Tree Level Order Traversal II.
 ```
 
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
