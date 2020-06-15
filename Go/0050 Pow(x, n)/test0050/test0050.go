@@ -17,14 +17,16 @@ func Test(fn testFunc) {
 	testFunction = fn
 	start := time.Now()
 
-	equals(2, -2, 0.25)
+	equals(3, 11, 177147)
 	equals(2.00, 10, 1024.00)
+	equals(2, -2, 0.25)
 	equals(2.1, 3, 9.26100)
 	equals(1, 10, 1)
 	equals(5, 0, 1)
 	equals(5, -1, 0.2)
 	equals(1, -2147483648, 1)
 	equals(8.88023, 3, 700.28148)
+	equals(1.05, 62, 20.59380)
 
 	duration := time.Since(start)
 	fmt.Println("Ran", numTests, "tests, ", failed, "failed")

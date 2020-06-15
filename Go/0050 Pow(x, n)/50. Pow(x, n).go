@@ -16,15 +16,17 @@ func myPow(x float64, n int) float64 {
 		x = 1 / x
 		n = n * -1
 	}
-	return float64(int(calcPow(x, n)*100000)) / 100000
-}
 
-func calcPow(x float64, n int) float64 {
-	if n == 1 {
-		return x
+	k := 1.0
+	for n != 1 {
+		if n%2 == 0 {
+			x *= x
+			n /= 2
+		} else {
+			k *= x
+			n--
+		}
 	}
-	if n%2 == 0 {
-		return calcPow(x*x, n/2)
-	}
-	return calcPow(x, n-1) * x
+	x *= k
+	return float64(int(x*100000)) / 100000
 }

@@ -4,7 +4,7 @@ https://leetcode.com/problems/powx-n/
 
 ```
 Runtime: 0 ms, faster than 100.00% of Go online submissions for Pow(x, n).
-Memory Usage: 2.1 MB, less than 15.88% of Go online submissions for Pow(x, n).
+Memory Usage: 2 MB, less than 100.00% of Go online submissions for Pow(x, n).
 ```
 
 Implement pow(x, n), which calculates x raised to the power n (x^n).
