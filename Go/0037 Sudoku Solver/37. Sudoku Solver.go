@@ -11,81 +11,58 @@ func main() {
 }
 
 func solveSudoku(board [][]byte) {
-	makeChange(board)
-}
+	rows := [9][9]int{}
+	columns := [9][9]int{}
+	squares := [9][9]int{}
 
-func makeChange(board [][]byte) bool {
-	y, x := findEmpty(board)
-	if y == -1 {
-		return true
-	}
-	for i := 1; i <= 9; i++ {
-		board[y][x] = byte(48 + i)
-		if checkRow(board, y) && checkColumn(board, x) && checkSquare(board, y, x) {
-			if makeChange(board) {
-				return true
-			}
-		}
-	}
-	board[y][x] = 46
-	return false
-}
-
-func findEmpty(board [][]byte) (int, int) {
 	for i := 0; i < 9; i++ {
 		for j := 0; j < 9; j++ {
-			if string(board[i][j]) == "." {
-				return i, j
+			if board[i][j] != 46 {
+				num := board[i][j] - 49
+				rows[i][num] = 1
+				columns[j][num] = 1
+				squareIndex := i/3*3 + j/3
+				squares[squareIndex][num] = 1
 			}
 		}
 	}
-	return -1, -1
+
+	backtracking(&board, &rows, &columns, &squares, 0, 0)
 }
 
-func checkRow(board [][]byte, row int) bool {
-	m := map[byte]bool{}
-	for i := 0; i < 9; i++ {
-		if string(board[row][i]) != "." {
-			if _, ok := m[board[row][i]]; ok {
-				//fmt.Println("Row")
-				return false
-			}
-			m[board[row][i]] = true
-		}
+func backtracking(board *[][]byte, rows *[9][9]int, columns *[9][9]int, squares *[9][9]int, y int, x int) bool {
+	if x == 9 {
+		x = 0
+		y++
 	}
-	return true
-}
-
-func checkColumn(board [][]byte, column int) bool {
-	m := map[byte]bool{}
-	for i := 0; i < 9; i++ {
-		if string(board[i][column]) != "." {
-			if _, ok := m[board[i][column]]; ok {
-				//fmt.Println("Column")
-				return false
-			}
-			m[board[i][column]] = true
-		}
+	if y == 9 {
+		return true
 	}
-	return true
-}
 
-func checkSquare(board [][]byte, row int, column int) bool {
-	m := map[byte]bool{}
-	y := row / 3 * 3
-	x := column / 3 * 3
-	for i := 0; i < 3; i++ {
-		for j := 0; j < 3; j++ {
-			if string(board[y+i][x+j]) != "." {
-				if _, ok := m[board[y+i][x+j]]; ok {
-					//fmt.Println("Square")
-					return false
+	if (*board)[y][x] == 46 {
+		for i := 0; i < 9; i++ {
+			if rows[y][i] == 0 && columns[x][i] == 0 && squares[y/3*3+x/3][i] == 0 {
+				rows[y][i] = 1
+				columns[x][i] = 1
+				squares[y/3*3+x/3][i] = 1
+				(*board)[y][x] = byte(49 + i)
+
+				if backtracking(board, rows, columns, squares, y, x+1) {
+					return true
 				}
-				m[board[y+i][x+j]] = true
+
+				rows[y][i] = 0
+				columns[x][i] = 0
+				squares[y/3*3+x/3][i] = 0
+				(*board)[y][x] = byte(46)
 			}
 		}
+	} else {
+		if backtracking(board, rows, columns, squares, y, x+1) {
+			return true
+		}
 	}
-	return true
+	return false
 }
 
 func print(board [][]byte) {

@@ -2,12 +2,9 @@
 
 https://leetcode.com/problems/sudoku-solver/
 
-To do:
-- optimize it alot
-
 ```
-Runtime: 176 ms, faster than 5.17% of Go online submissions for Sudoku Solver.
-Memory Usage: 2.9 MB, less than 14.00% of Go online submissions for Sudoku Solver.
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Sudoku Solver.
+Memory Usage: 2.1 MB, less than 71.00% of Go online submissions for Sudoku Solver.
 ```
 
 Write a program to solve a Sudoku puzzle by filling the empty cells.
