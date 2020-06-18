@@ -3,7 +3,8 @@
 https://leetcode.com/problems/count-and-say/
 
 ```
-
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Count and Say.
+Memory Usage: 3.4 MB, less than 65.24% of Go online submissions for Count and Say.
 ```
 
 The count-and-say sequence is the sequence of integers with the first five terms as following:
