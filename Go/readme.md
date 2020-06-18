@@ -14,4 +14,4 @@ To optimize: #29, #30, #32, #57, #60, #73
 
 To clean up code: #36
 
-To complete: #38, #41
+To complete: #41
