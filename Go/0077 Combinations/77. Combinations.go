@@ -10,9 +10,7 @@ func main() {
 
 func combine(n int, k int) [][]int {
 	res := [][]int{}
-	for i := 1; i <= n-k+1; i++ {
-		permut(i, n, k-1, &res, []int{i})
-	}
+	permut(0, n, k, &res, []int{})
 	return res
 }
 
