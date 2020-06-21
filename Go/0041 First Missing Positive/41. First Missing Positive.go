@@ -1,17 +1,28 @@
 package main
 
-import "./test0041"
+import (
+	"./test0041"
+)
 
-func main(){
+func main() {
 	test0041.Test(firstMissingPositive)
 }
 
 func firstMissingPositive(nums []int) int {
-	smallest := 213213
-	for _, val := range nums {
-		if val > 0 && val < smallest{
-			smallest = val
-		} 
+	for i := 0; i < len(nums); i++ {
+		val := nums[i]
+		if val < 1 || val > len(nums) {
+			continue
+		}
+		if nums[i] != nums[val-1] {
+			nums[i], nums[val-1] = nums[val-1], nums[i]
+			i--
+		}
 	}
-    return smallest
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != i+1 {
+			return i + 1
+		}
+	}
+	return len(nums) + 1
 }

@@ -21,6 +21,8 @@ func Test(fn testFunc) {
 	equals([]int{3, 4, -1, 1}, 2)
 	equals([]int{7, 8, 9, 11, 12}, 1)
 	equals([]int{3, 2, 5, 48, 1, 4}, 6)
+	equals([]int{}, 1)
+	equals([]int{0, 2, 2, 1, 1}, 3)
 
 	duration := time.Since(start)
 	fmt.Println("Ran", numTests, "tests, ", failed, "failed")
