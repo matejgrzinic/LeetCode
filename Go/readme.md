@@ -10,7 +10,7 @@
 - [ ] 1000 Solutions
 
 
-To optimize: #29, #30, #32, #43, #57, #60, #73
+To optimize: #29, #30, #32, #43, #57, #60, #71, #73
 
 To clean up code: #36
 
