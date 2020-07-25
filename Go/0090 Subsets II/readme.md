@@ -2,12 +2,9 @@
 
 https://leetcode.com/problems/subsets-ii/
 
-To do:
-- optimize
-
 ```
-Runtime: 4 ms, faster than 23.48% of Go online submissions for Subsets II.
-Memory Usage: 3.1 MB, less than 5.26% of Go online submissions for Subsets II.
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Subsets II.
+Memory Usage: 2.4 MB, less than 100.00% of Go online submissions for Subsets II.
 ```
 
 Given a collection of integers that might contain duplicates, **nums**, return all possible subsets (the power set).
