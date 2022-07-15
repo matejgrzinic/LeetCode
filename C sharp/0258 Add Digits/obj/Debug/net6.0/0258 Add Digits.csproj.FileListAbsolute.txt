@@ -1,0 +1,15 @@
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\bin\Debug\net6.0\0258 Add Digits.exe
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\bin\Debug\net6.0\0258 Add Digits.deps.json
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\bin\Debug\net6.0\0258 Add Digits.runtimeconfig.json
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\bin\Debug\net6.0\0258 Add Digits.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\bin\Debug\net6.0\0258 Add Digits.pdb
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.csproj.AssemblyReference.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.AssemblyInfoInputs.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.AssemblyInfo.cs
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.csproj.CoreCompileInputs.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\refint\0258 Add Digits.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.pdb
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\0258 Add Digits.genruntimeconfig.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0258 Add Digits\obj\Debug\net6.0\ref\0258 Add Digits.dll
