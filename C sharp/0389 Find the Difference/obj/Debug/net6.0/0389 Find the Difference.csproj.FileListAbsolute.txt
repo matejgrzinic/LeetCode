@@ -1,0 +1,15 @@
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\bin\Debug\net6.0\0389 Find the Difference.exe
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\bin\Debug\net6.0\0389 Find the Difference.deps.json
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\bin\Debug\net6.0\0389 Find the Difference.runtimeconfig.json
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\bin\Debug\net6.0\0389 Find the Difference.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\bin\Debug\net6.0\0389 Find the Difference.pdb
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.csproj.AssemblyReference.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.AssemblyInfoInputs.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.AssemblyInfo.cs
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.csproj.CoreCompileInputs.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\refint\0389 Find the Difference.dll
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.pdb
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\0389 Find the Difference.genruntimeconfig.cache
+C:\Users\matej\Documents\dev\LeetCode\C sharp\0389 Find the Difference\obj\Debug\net6.0\ref\0389 Find the Difference.dll
